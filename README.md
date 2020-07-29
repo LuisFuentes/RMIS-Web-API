@@ -1,5 +1,4 @@
 #RMIS Demo API
-=====================
 
 Database-First Approach
 ------------------------
