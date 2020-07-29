@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMISDemo.API", "RMISDemo.API\RMISDemo.API.csproj", "{C4740D10-FF42-476A-B5BC-17A6F6B40396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMIS.Blog.Scraping", "RMIS.Blog.Scraping\RMIS.Blog.Scraping.csproj", "{DB2AF924-EAEF-4468-8629-FC584743B2D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4740D10-FF42-476A-B5BC-17A6F6B40396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4740D10-FF42-476A-B5BC-17A6F6B40396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4740D10-FF42-476A-B5BC-17A6F6B40396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4740D10-FF42-476A-B5BC-17A6F6B40396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB2AF924-EAEF-4468-8629-FC584743B2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB2AF924-EAEF-4468-8629-FC584743B2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB2AF924-EAEF-4468-8629-FC584743B2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB2AF924-EAEF-4468-8629-FC584743B2D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF62992A-290F-4F2A-8E35-BBDA850F0BA7}
+	EndGlobalSection
+EndGlobal

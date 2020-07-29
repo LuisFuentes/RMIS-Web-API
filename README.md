@@ -1,20 +1,31 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+#RMIS Demo API
+=====================
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Database-First Approach
+------------------------
+Create the database and tables in Azure SQL Database.
+Install these packages:
+```
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+```
+Eventually Newtonsoft JSON package will be needed to parse JSON objects for Controllers:
+```
+Install-Package Microsoft.AspNetCore.Mvc.NewtonsoftJson -Version 3.1.6
+```
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Scaffold the Models
+-----------------------
+Create the models from the existing database using Scaffold-DbContext command.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+The Server name is <SERVER_NAME>.windows.net for Azure SQL Database.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+The Database name is whatever the name of the DB is.
+
+You will also need a Username and Password that is created for the specific Azure SQL Server.
+Running this command will create a Models folder in the project solution:
+```
+Scaffold-DbContext "Server=<HOSTED_SERVER_NAME>.windows.net;Database=<DATABASE_NAME>;Trusted_Connection=False;Encrypt=True;User ID=<USERNAME>;Password=<PASSWORD>;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+```
+Now the Models and Data Context exist.
+
